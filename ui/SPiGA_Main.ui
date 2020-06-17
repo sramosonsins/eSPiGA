@@ -1,0 +1,1041 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <author>Sebastian E. Ramos -Onsins&amp; Jordi Leno-Colorado</author>
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>850</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>850</width>
+    <height>500</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="Log_header" stretch="10,0,0">
+      <property name="spacing">
+       <number>10</number>
+      </property>
+      <property name="sizeConstraint">
+       <enum>QLayout::SetFixedSize</enum>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <property name="sizeConstraint">
+         <enum>QLayout::SetFixedSize</enum>
+        </property>
+        <item>
+         <widget class="QLabel" name="Log_text">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>20</horstretch>
+            <verstretch>20</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>Log Window</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <property name="sizeConstraint">
+         <enum>QLayout::SetFixedSize</enum>
+        </property>
+        <item>
+         <widget class="QPushButton" name="pushButton_SaveLog">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>Save</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_8">
+        <property name="rightMargin">
+         <number>700</number>
+        </property>
+        <item>
+         <spacer name="horizontalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>700</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="Log_Layout">
+      <item>
+       <widget class="QListView" name="listView_log">
+        <property name="minimumSize">
+         <size>
+          <width>750</width>
+          <height>85</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 196);</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QPlainTextEdit" name="Blank_Separator_1">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>3</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>3</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>2</pointsize>
+       </font>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="Command_header" stretch="10,10,10,0,0">
+      <property name="spacing">
+       <number>10</number>
+      </property>
+      <property name="sizeConstraint">
+       <enum>QLayout::SetFixedSize</enum>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <property name="sizeConstraint">
+         <enum>QLayout::SetFixedSize</enum>
+        </property>
+        <item>
+         <widget class="QLabel" name="Command_text">
+          <property name="text">
+           <string>Command Window</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <widget class="QPushButton" name="Save_Command_button">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>Save</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_6">
+        <item>
+         <widget class="QPushButton" name="Clear_Command_button">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>Delete All</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_11">
+        <property name="sizeConstraint">
+         <enum>QLayout::SetFixedSize</enum>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QPushButton" name="DeleteLLast_Command_button">
+          <property name="text">
+           <string>Delete Last</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="0,0,0">
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QPushButton" name="Run_Terminal">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>Run on Terminal</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_4">
+          <property name="text">
+           <string>Run on Terminal (bakground)</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_7">
+          <property name="leftMargin">
+           <number>20</number>
+          </property>
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>400</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="Command_Layout">
+      <item>
+       <widget class="QTextEdit" name="textEdit_CommandWindow">
+        <property name="minimumSize">
+         <size>
+          <width>750</width>
+          <height>85</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QPlainTextEdit" name="Blank_Separator_2">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>3</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>3</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_9">
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_10">
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="Terminal_text">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>Terminal Window</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_12">
+        <property name="rightMargin">
+         <number>10</number>
+        </property>
+        <item>
+         <widget class="QPushButton" name="pushButton">
+          <property name="text">
+           <string>Stop Run</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_14">
+        <property name="rightMargin">
+         <number>10</number>
+        </property>
+        <item>
+         <widget class="QPushButton" name="pushButton_3">
+          <property name="text">
+           <string>Kill Run</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_13">
+        <property name="rightMargin">
+         <number>10</number>
+        </property>
+        <item>
+         <widget class="QPushButton" name="pushButton_2">
+          <property name="text">
+           <string>Continue Run (fg)</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_15">
+        <property name="rightMargin">
+         <number>10</number>
+        </property>
+        <item>
+         <widget class="QPushButton" name="pushButton_5">
+          <property name="text">
+           <string>Continue Run (fg)</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="Terminal_Layout">
+      <item>
+       <widget class="QListView" name="listView_Terminal">
+        <property name="minimumSize">
+         <size>
+          <width>750</width>
+          <height>85</height>
+         </size>
+        </property>
+        <property name="palette">
+         <palette>
+          <active>
+           <colorrole role="WindowText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>25</red>
+              <green>174</green>
+              <blue>7</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Button">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Light">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Midlight">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>90</red>
+              <green>252</green>
+              <blue>86</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Text">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>60</red>
+              <green>151</green>
+              <blue>54</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="BrightText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>16</red>
+              <green>16</green>
+              <blue>16</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="ButtonText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>255</red>
+              <green>255</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Base">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Window">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </active>
+          <inactive>
+           <colorrole role="WindowText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>25</red>
+              <green>174</green>
+              <blue>7</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Button">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Light">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Midlight">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>90</red>
+              <green>252</green>
+              <blue>86</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Text">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>60</red>
+              <green>151</green>
+              <blue>54</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="BrightText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>16</red>
+              <green>16</green>
+              <blue>16</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="ButtonText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>255</red>
+              <green>255</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Base">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Window">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </inactive>
+          <disabled>
+           <colorrole role="WindowText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>127</red>
+              <green>127</green>
+              <blue>127</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Button">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Light">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Midlight">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>90</red>
+              <green>252</green>
+              <blue>86</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Text">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>127</red>
+              <green>127</green>
+              <blue>127</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="BrightText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>16</red>
+              <green>16</green>
+              <blue>16</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="ButtonText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>148</red>
+              <green>148</green>
+              <blue>148</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Base">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Window">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </disabled>
+         </palette>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(0, 0, 0);
+font: 13pt &quot;.SF NS Text&quot;;
+</string>
+        </property>
+        <property name="movement">
+         <enum>QListView::Snap</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>850</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuPre_Process">
+    <property name="title">
+     <string>File Formats</string>
+    </property>
+    <widget class="QMenu" name="menuConversion_formats">
+     <property name="title">
+      <string>Conversion formats</string>
+     </property>
+     <addaction name="actionfasta_tFasta"/>
+     <addaction name="actiongVCF_tFasta"/>
+     <addaction name="separator"/>
+     <addaction name="actiontFasta_fasta"/>
+     <addaction name="actionfasta_fasta_section"/>
+     <addaction name="separator"/>
+     <addaction name="actiontFasta_ms"/>
+     <addaction name="actionfasta_ms"/>
+     <addaction name="separator"/>
+     <addaction name="actionms_genotype"/>
+    </widget>
+    <widget class="QMenu" name="menuMerge_tFastas">
+     <property name="title">
+      <string>Merge tFasta Files</string>
+     </property>
+     <addaction name="actionAdd_positions_equal_ind"/>
+     <addaction name="actionAdd_individuals_equal_pos"/>
+    </widget>
+    <addaction name="menuConversion_formats"/>
+    <addaction name="actionCreate_Weights_File"/>
+    <addaction name="actionIndexi_tFasta_File"/>
+    <addaction name="menuMerge_tFastas"/>
+   </widget>
+   <widget class="QMenu" name="menumstatspop">
+    <property name="title">
+     <string>Variability Analyses</string>
+    </property>
+    <widget class="QMenu" name="menumstatspop_2">
+     <property name="title">
+      <string>Frequency Based Statistics</string>
+     </property>
+     <addaction name="actionFASTA_Single_Region_analyses"/>
+     <addaction name="actionTFASTA_INOUT_Genome_Analyses"/>
+     <addaction name="actionMS_file_Iinput_Simulation_analyses"/>
+    </widget>
+    <widget class="QMenu" name="menuGenotype_Based_Statistics_2">
+     <property name="title">
+      <string>Genotype Based Statistics</string>
+     </property>
+     <addaction name="actionRsb_and_Related_Statistics_2"/>
+     <addaction name="actionDetection_of_Incompatible_Genealogies"/>
+    </widget>
+    <addaction name="menumstatspop_2"/>
+    <addaction name="menuGenotype_Based_Statistics_2"/>
+   </widget>
+   <widget class="QMenu" name="menuPostProcess">
+    <property name="title">
+     <string>Results</string>
+    </property>
+    <addaction name="actionOpen_Table_2"/>
+    <addaction name="actionSave_Table"/>
+   </widget>
+   <widget class="QMenu" name="menuRun">
+    <property name="title">
+     <string>Run</string>
+    </property>
+    <addaction name="actionSave_Commands"/>
+    <addaction name="actionRun_on_a_Terminal"/>
+    <addaction name="actionRun_Commands_on_background"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionManual"/>
+    <addaction name="actionContributors"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="actionUndo"/>
+    <addaction name="actionRedo"/>
+    <addaction name="separator"/>
+    <addaction name="actionCut"/>
+    <addaction name="actionCopy"/>
+    <addaction name="actionPaste"/>
+    <addaction name="separator"/>
+    <addaction name="actionDelete_All_commands"/>
+    <addaction name="actionDelete_Last_Command"/>
+   </widget>
+   <widget class="QMenu" name="menuSPiGA">
+    <property name="title">
+     <string>SPiGA</string>
+    </property>
+    <addaction name="actionAbout_SPiGA"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuit_3"/>
+   </widget>
+   <addaction name="menuSPiGA"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuPre_Process"/>
+   <addaction name="menumstatspop"/>
+   <addaction name="menuRun"/>
+   <addaction name="menuPostProcess"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionCreate_Weights_File">
+   <property name="text">
+    <string>Create Weights File</string>
+   </property>
+  </action>
+  <action name="actionIndexi_tFasta_File">
+   <property name="text">
+    <string>Create Index tFasta File</string>
+   </property>
+  </action>
+  <action name="actionfasta_tFasta">
+   <property name="text">
+    <string>fasta -&gt; tFasta</string>
+   </property>
+  </action>
+  <action name="actionfasta_ms">
+   <property name="text">
+    <string>fasta -&gt; ms</string>
+   </property>
+  </action>
+  <action name="actionfasta_fasta_section">
+   <property name="text">
+    <string>fasta -&gt; fasta (section)</string>
+   </property>
+  </action>
+  <action name="actiontFasta_fasta">
+   <property name="text">
+    <string>tFasta -&gt; fasta</string>
+   </property>
+  </action>
+  <action name="actiontFasta_ms">
+   <property name="text">
+    <string>tFasta -&gt; ms</string>
+   </property>
+  </action>
+  <action name="actiongVCF_tFasta">
+   <property name="text">
+    <string>gVCF -&gt; tFasta</string>
+   </property>
+  </action>
+  <action name="actionAdd_positions_equal_ind">
+   <property name="text">
+    <string>Add positions</string>
+   </property>
+  </action>
+  <action name="actionAdd_individuals_equal_pos">
+   <property name="text">
+    <string>Add individuals</string>
+   </property>
+  </action>
+  <action name="actionSave_Commands">
+   <property name="text">
+    <string>Save Commands on a File</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionRun_on_a_Terminal">
+   <property name="text">
+    <string>Run Commands on a Terminal</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Return</string>
+   </property>
+  </action>
+  <action name="actionManual">
+   <property name="text">
+    <string>Manual</string>
+   </property>
+  </action>
+  <action name="actionContributors">
+   <property name="text">
+    <string>Contributors</string>
+   </property>
+  </action>
+  <action name="actionCopy">
+   <property name="text">
+    <string>Copy</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="actionPaste">
+   <property name="text">
+    <string>Paste</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
+   </property>
+  </action>
+  <action name="actionDelete_All_commands">
+   <property name="text">
+    <string>Delete All commands</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+D</string>
+   </property>
+  </action>
+  <action name="actionDelete_Last_Command">
+   <property name="text">
+    <string>Delete Last Command</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+L</string>
+   </property>
+  </action>
+  <action name="actionOpen_Table_2">
+   <property name="text">
+    <string>Open and Sort Results</string>
+   </property>
+   <property name="toolTip">
+    <string>Open Table</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionSave_Table">
+   <property name="text">
+    <string>Save  Files</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+S</string>
+   </property>
+  </action>
+  <action name="actionSelect_Columns">
+   <property name="text">
+    <string>Select Columns</string>
+   </property>
+  </action>
+  <action name="actionAbout_SPiGA">
+   <property name="text">
+    <string>About SPiGA</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
+   </property>
+  </action>
+  <action name="actionQuit_3">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionDefine_General_Parameters">
+   <property name="text">
+    <string>Define General Parameters</string>
+   </property>
+  </action>
+  <action name="actionCut">
+   <property name="text">
+    <string>Cut</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+X</string>
+   </property>
+  </action>
+  <action name="actionLicense_2">
+   <property name="text">
+    <string>License</string>
+   </property>
+  </action>
+  <action name="actionUndo">
+   <property name="text">
+    <string>Undo</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Z</string>
+   </property>
+  </action>
+  <action name="actionRedo">
+   <property name="text">
+    <string>Redo</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+Z</string>
+   </property>
+  </action>
+  <action name="actionRun_Commands_on_background">
+   <property name="text">
+    <string>Run Commands on background </string>
+   </property>
+  </action>
+  <action name="actionFASTA_Single_Region_analyses">
+   <property name="text">
+    <string>FASTA input (Single Region Analyses)</string>
+   </property>
+  </action>
+  <action name="actionTFASTA_INOUT_Genome_Analyses">
+   <property name="text">
+    <string>TFASTA input (Genome Analyses)</string>
+   </property>
+  </action>
+  <action name="actionMS_file_Iinput_Simulation_analyses">
+   <property name="text">
+    <string>MS input (Simulation Analyses)</string>
+   </property>
+  </action>
+  <action name="actionRsb_and_Related_Statistics">
+   <property name="text">
+    <string>Rsb and Related Statistics</string>
+   </property>
+  </action>
+  <action name="actionDIGUP">
+   <property name="text">
+    <string>DIGUP</string>
+   </property>
+  </action>
+  <action name="actionRsb_and_Related_Statistics_2">
+   <property name="text">
+    <string>Rsb and Related Statistics</string>
+   </property>
+  </action>
+  <action name="actionDetection_of_Incompatible_Genealogies">
+   <property name="text">
+    <string>Detection of Incompatible Genealogies</string>
+   </property>
+  </action>
+  <action name="actionms_genotype">
+   <property name="text">
+    <string>ms -&gt; genotype</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="9"/>
+ <resources>
+  <include location="../GSAW/icon.qrc"/>
+ </resources>
+ <connections/>
+ <designerdata>
+  <property name="gridDeltaX">
+   <number>10</number>
+  </property>
+  <property name="gridDeltaY">
+   <number>10</number>
+  </property>
+  <property name="gridSnapX">
+   <bool>true</bool>
+  </property>
+  <property name="gridSnapY">
+   <bool>true</bool>
+  </property>
+  <property name="gridVisible">
+   <bool>true</bool>
+  </property>
+ </designerdata>
+</ui>

@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>810</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>810</width>
+    <height>700</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>810</width>
+    <height>700</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="Line" name="line_2">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>210</y>
+     <width>761</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>10</y>
+     <width>571</width>
+     <height>197</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_3">
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>18</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>SPiGA: Statistical Population Genomic Analyses</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_2">
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Sebastian E. Ramos-Onsins lab. </string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_8">
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://bioinformatics.cragenomica.es/numgenomics/people/sebas/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://bioinformatics.cragenomica.es/numgenomics/people/sebas/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_3">
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Centre for Resarch in Agricultural Genomics (CRAG) Consortium CSIC-IRTA-UAB-UB</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_5">
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://www.cragenomica.es&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://www.cragenomica.es&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_7">
+      <property name="text">
+       <string>Repository SPiGA:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_6">
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://www.github.com/CRAGENOMICA.es/SPiGA&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://www.github.com/CRAGENOMICA.es/SPiGA&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_4">
+      <property name="font">
+       <font>
+        <family>Helvetica Neue</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Copyright © 2009–2020 Sebastian Ramos-Onsins  All rights reserved.</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>650</y>
+     <width>751</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QLabel" name="label_10">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="text">
+       <string>  version 0.1</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_AboutOK">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="text">
+       <string>OK</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>30</y>
+     <width>151</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="icon_SPiGA.qrc">:/logo/SPiGA_icon.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QScrollArea" name="scrollArea">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>230</y>
+     <width>781</width>
+     <height>384</height>
+    </rect>
+   </property>
+   <property name="widgetResizable">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="scrollAreaWidgetContents">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>779</width>
+      <height>596</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <item>
+        <spacer name="horizontalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_11">
+         <property name="text">
+          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.SF NS Text'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica'; font-weight:600;&quot;&gt;Contributors:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;git clone https://github.com/CRAGENOMICA/SPiGA.git &quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;SPiGA&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'Helvetica'; font-weight:600;&quot;&gt;:&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica';&quot;&gt; Designers: &lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica'; color:#800002;&quot;&gt;Sebastian E. Ramos-Onsins&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica'; color:#800002; vertical-align:super;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica'; color:#800002;&quot;&gt;, Gonzalo Vera&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica'; color:#800002; vertical-align:super;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica'; color:#800002;&quot;&gt; and Julio Rozas&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica'; color:#800002; vertical-align:super;&quot;&gt;2&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica'; color:#800002;&quot;&gt; .&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica';&quot;&gt; Developers:&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica'; color:#800002;&quot;&gt; Jordi Leno-Colorado&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica'; color:#800002; vertical-align:super;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica'; color:#800002;&quot;&gt;, Sebastian E. Ramos-Onsins&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica'; color:#800002; vertical-align:super;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica';&quot;&gt;, .... &lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica'; vertical-align:super;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica';&quot;&gt;Centre for Research in Agricultural Genomics (CRAG). Consortium CSIC-IRTA-UAB-UB. Campus UAB. Bellaterra, Barcelona, Catalunya, Spain.&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica'; vertical-align:super;&quot;&gt;2&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica';&quot;&gt;Dept. Genètica, Microbiologia i Estadística &amp;amp; Institut de Recerca de la Biodiversitat (IRBio), Universitat de Barcelona, Barcelona, Spain.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;git clone https://github.com/CRAGENOMICA/mstatspop.git &quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;mstatspop&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'Helvetica'; font-weight:600;&quot;&gt;: &lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica';&quot;&gt;Developers: &lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica'; color:#800002;&quot;&gt;Sebastian E. Ramos-Onsins&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica'; color:#800002; vertical-align:super;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica'; color:#800002;&quot;&gt;, Luca Ferretti&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica'; color:#800002; vertical-align:super;&quot;&gt;2&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica'; color:#800002;&quot;&gt;, Emanuele Raineri&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica'; color:#800002; vertical-align:super;&quot;&gt;3&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica'; color:#800002;&quot;&gt;, Giacomo Marmorini&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica'; color:#800002; vertical-align:super;&quot;&gt;4&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica'; color:#800002;&quot;&gt;, William Burgos&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica'; color:#800002; vertical-align:super;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica'; color:#800002;&quot;&gt;, Joan Jene&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica'; color:#800002; vertical-align:super;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica'; color:#800002;&quot;&gt; and Gonzalo Vera&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica'; color:#800002; vertical-align:super;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica';&quot;&gt;. &lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica'; vertical-align:super;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica';&quot;&gt;Centre for Research in Agricultural Genomics (CRAG). Consortium CSIC-IRTA-UAB-UB. Campus UAB. Bellaterra, Barcelona, Catalunya, Spain. &lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica'; vertical-align:super;&quot;&gt;2&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica';&quot;&gt;Big Data Institute (BDI), University of Oxford, UK. &lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica'; vertical-align:super;&quot;&gt;3&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica';&quot;&gt;Centro Nacional de Análisis Genómico (CNAG-CRG), Parc Científic de Barcelona, BCN, Spain.&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica'; vertical-align:super;&quot;&gt;4&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica';&quot;&gt;Yukawa Institute for Theoretical Physics (YITP), Kyoto, Japan.&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica'; vertical-align:super;&quot;&gt;5&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica';&quot;&gt;Dept. Genètica, Microbiologia i Estadística &amp;amp; Institut de Recerca de la Biodiversitat (IRBio), Universitat de Barcelona, Barcelona, Spain.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;git clone https://github.com/CRAGENOMICA/DIGUP.git &quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;DIGUP&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-weight:600;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica';&quot;&gt;Developer: &lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica'; color:#800002;&quot;&gt;Mireia Vidal&lt;/span&gt;&lt;span style=&quot; color:#800002;&quot;&gt;.&lt;/span&gt; &lt;span style=&quot; font-family:'Helvetica';&quot;&gt;Centre for Research in Agricultural Genomics (CRAG). Consortium CSIC-IRTA-UAB-UB. Campus UAB. Bellaterra, Barcelona, Catalunya, Spain.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;git clone https://github.com/CRAGENOMICA/fastaconvtr.git &quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;asta_convrtr&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;: &lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica';&quot;&gt;Developer: &lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica'; color:#800002;&quot;&gt;Sebastian E. Ramos-Onsins&lt;/span&gt;. &lt;span style=&quot; font-family:'Helvetica';&quot;&gt;Centre for Research in Agricultural Genomics (CRAG). Consortium CSIC-IRTA-UAB-UB. Campus UAB. Bellaterra, Barcelona, Catalunya, Spain.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;git clone https://github.com/CRAGENOMICA/weight4tfa.git&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;weight4tfasta&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;: &lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica';&quot;&gt;Developer: &lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica'; color:#800002;&quot;&gt;Sebastian E. Ramos-Onsins&lt;/span&gt;. &lt;span style=&quot; font-family:'Helvetica';&quot;&gt;Centre for Research in Agricultural Genomics (CRAG). Consortium CSIC-IRTA-UAB-UB. Campus UAB. Bellaterra, Barcelona, Catalunya, Spain.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;git clone https://github.com/CRAGENOMICA/gVCF2tFasta.git &quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;gvCF2tFasta&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;: &lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica';&quot;&gt;Developer: &lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica'; color:#800002;&quot;&gt;Jordi Leno-Colardo&lt;/span&gt;. &lt;span style=&quot; font-family:'Helvetica';&quot;&gt;Centre for Research in Agricultural Genomics (CRAG). Consortium CSIC-IRTA-UAB-UB. Campus UAB. Bellaterra, Barcelona, Catalunya, Spain.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;git clone https://github.com/CRAGENOMICA/indexingtFasta.git &quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;indexingtFasta&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;: &lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica';&quot;&gt;Developer: &lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica'; color:#800002;&quot;&gt;Jordi Leno-Colardo&lt;/span&gt;. &lt;span style=&quot; font-family:'Helvetica';&quot;&gt;Centre for Research in Agricultural Genomics (CRAG). Consortium CSIC-IRTA-UAB-UB. Campus UAB. Bellaterra, Barcelona, Catalunya, Spain.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;git clone https://github.com/CRAGENOMICA/concatenate_tFasta.git &quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;concatenate_tFasta&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;: &lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica';&quot;&gt;Developer: &lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica'; color:#800002;&quot;&gt;Jordi Leno-Colardo&lt;/span&gt;. &lt;span style=&quot; font-family:'Helvetica';&quot;&gt;Centre for Research in Agricultural Genomics (CRAG). Consortium CSIC-IRTA-UAB-UB. Campus UAB. Bellaterra, Barcelona, Catalunya, Spain.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;git clone https://github.com/CRAGENOMICA/mergetFasta.git &quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;mergetFasta&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;: &lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica'; color:#800002;&quot;&gt;Jordi Leno-Colardo&lt;/span&gt;. &lt;span style=&quot; font-family:'Helvetica';&quot;&gt;Centre for Research in Agricultural Genomics (CRAG). Consortium CSIC-IRTA-UAB-UB. Campus UAB. Bellaterra, Barcelona, Catalunya, Spain.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;git clone https://github.com/CRAGENOMICA/ms2geno.git &quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;ms2geno&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;: &lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica';&quot;&gt;Developer: &lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica'; color:#800002;&quot;&gt;Sebastian E. Ramos-Onsins&lt;/span&gt;. &lt;span style=&quot; font-family:'Helvetica';&quot;&gt;Centre for Research in Agricultural Genomics (CRAG). Consortium CSIC-IRTA-UAB-UB. Campus UAB. Bellaterra, Barcelona, Catalunya, Spain.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;git clone https://github.com/CRAGENOMICA/Tang_Rsb.git &quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Tang_Rsb&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-weight:600;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica';&quot;&gt;Developer: &lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica'; color:#800002;&quot;&gt;Sebastian E. Ramos-Onsins&lt;/span&gt;. &lt;span style=&quot; font-family:'Helvetica';&quot;&gt;Centre for Research in Agricultural Genomics (CRAG). Consortium CSIC-IRTA-UAB-UB. Campus UAB. Bellaterra, Barcelona, Catalunya, Spain.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+         <property name="openExternalLinks">
+          <bool>true</bool>
+         </property>
+         <property name="textInteractionFlags">
+          <set>Qt::LinksAccessibleByMouse</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_4">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>620</y>
+     <width>741</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="icon_SPiGA.qrc"/>
+ </resources>
+ <connections/>
+</ui>

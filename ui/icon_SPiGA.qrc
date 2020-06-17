@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="logo">
+    <file>SPiGA_icon.png</file>
+  </qresource>
+</RCC>
