@@ -5,8 +5,64 @@ eSPIGA is a software package designed for the analysis of genome variability of 
 
 eSPIGA provides a user-friendly graphical user interface (GUI), which helps to the user to chose the options and necessary flags for the analysis of sequence variability. The final result is a file with all the statistics obtained from the performed analysis. These results can be showed in a tab-formatted table in the interface. The interface is divided in three main sections: (i) pre-processing: where sequence format converters, annotation files and additional filtered op- tions are managed to be ready for the analysis with mstatspop program, (ii) anal- ysis: calculation of all statistics given the desired options of the user, including sequence and annotation files, and (iii) post-processing: the obtained statistics are showed and can be filtered from the whole output file(s) and released in text tab separated tables. A window including all the selected commands are visualised at the bottom of the interface. these commands can be copied and included in a file or directly run on a terminal. This framework allows a fast automation of pipelines for posterior analysis.
 
-URL
-http://www.github.com/CRAGENOMICA/GSAW
+
+
+
+# Installation 
+## 1. Download Desktop app from 
+https://updates.biotechvana.com/software/eSPiGA/latest/
+
+## eSPiGA Downloads Latest Versions
+1. **Windows (64-bit)**
+   - File: [eSPiGA.latest-win32.win32.x86_64.zip](https://updates.biotechvana.com/software/eSPiGA/latest/eSPiGA.latest-win32.win32.x86_64.zip)
+
+2. **macOS (64-bit)**
+   - File: [eSPiGA.latest-macosx.cocoa.x86_64.pkg](https://updates.biotechvana.com/software/eSPiGA/latest/eSPiGA.latest-macosx.cocoa.x86_64.pkg)
+
+3. **Linux (64-bit)**
+   - File: [eSPiGA.latest-linux.gtk.x86_64.zip](https://updates.biotechvana.com/software/eSPiGA/latest/eSPiGA.latest-linux.gtk.x86_64.zip)
+
+## 2.  Run SPIGA server using Docker Hub
+
+## 1. Pull the Image
+First, pull the SPIGA image from Docker Hub:
+```bash
+docker pull biotechvana/spiga
+```
+
+## 2. Run the Container
+Run the SPIGA container with the following command:
+
+```bash
+docker run -p 8080:80 -p 2202:22 \
+-e GPRO_USER_ID=$(id -u) \
+-e GPRO_USER_GID=$(id -g) \
+-v /path/to/your/data:/data/gpro_user \
+biotechvana/spiga
+```
+
+### Command Explanation:
+- `-p 8080:80`: Maps container's port 80 to host's port 8080 (web interface)
+- `-p 2202:22`: Maps container's SSH port 22 to host's port 2202
+- `-e GPRO_USER_ID=$(id -u)`: Sets user ID to match host system user
+- `-e GPRO_USER_GID=$(id -g)`: Sets group ID to match host system group
+- `-v /path/to/your/data:/data/gpro_user`: Mounts your local data directory into the container
+
+## 3. Access SPIGA
+- Open App and set connection setting for 
+- Server : localhost
+- Username : g_user (or your setting)
+- Password : g_user (or your setting)
+- SSH access: Port 2202 (your mapping)
+- API Port : 8080 (your mapping)
+
+## 4. Data Persistence
+Your data will be persisted in the mounted volume at `/path/to/your/data`
+
+## Note
+Make sure to replace `/path/to/your/data` with your actual data directory path.
+
+
 
 License
 Copyright 2009-2020 Sebastian E. Ramos-Onsins
@@ -14,12 +70,6 @@ eSPIGA graphical interface is a free software, under any of the following licens
 All C, C++ and perl packages included in eSPIGA are free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.
 All packages included in eSPIGA s distributed in the hope that it will be use- ful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public Licenses (http://www.gnu.org/licenses/) for more details.
 
-Installation 
 
-To download the package, there are two options, either clone the repository, that is, copying the git command to execute on a terminal:
-
-git clone https://github.com/CRAGENOMICA/GSAW.git
-
-Follow the intructions using the manual included in the repository.
 
 
