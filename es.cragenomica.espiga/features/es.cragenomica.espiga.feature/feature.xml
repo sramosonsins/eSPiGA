@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="es.cragenomica.espiga.feature"
+      label="eSPiGA Feature"
+      version="1.1.0.qualifier"
+      provider-name="BIOTECHVANA">
+
+   <description url="http://www.example.com/description">
+      [Enter Feature Description here.]
+   </description>
+
+   <copyright url="http://www.example.com/copyright">
+      [Enter Copyright Description here.]
+   </copyright>
+
+   <license url="http://www.example.com/license">
+      [Enter License Description here.]
+   </license>
+
+   <plugin
+         id="es.cragenomica.espiga.plugin"
+         version="0.0.0"/>
+
+   <plugin
+         id="org.eclipse.equinox.security"
+         version="0.0.0"/>
+
+   <plugin
+         id="es.cragenomica.espiga.ui"
+         version="0.0.0"/>
+
+</feature>

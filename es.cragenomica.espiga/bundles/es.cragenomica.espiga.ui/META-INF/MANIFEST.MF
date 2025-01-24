@@ -1,0 +1,25 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: eSPiGA UI
+Bundle-RequiredExecutionEnvironment: JavaSE-17
+Bundle-SymbolicName: es.cragenomica.espiga.ui;singleton:=true
+Bundle-Version: 1.1.0.qualifier
+Import-Package: jakarta.annotation;version="2.1.1",
+ jakarta.inject;version="2.0.1"
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.jface,
+ com.biotechvana.servercommons,
+ org.eclipse.e4.core.di,
+ org.eclipse.e4.core.contexts,
+ org.eclipse.e4.ui.workbench,
+ com.biotechvana.utils,
+ org.eclipse.e4.ui.di,
+ org.osgi.service.event,
+ org.eclipse.e4.ui.progress,
+ org.eclipse.e4.ui.model.workbench,
+ com.biotechvana.ui.rcp.commons
+Bundle-Activator: es.cragenomica.espiga.ui.Activator
+Bundle-Vendor: BIOTECHVANA
+Bundle-Localization: plugin
+Automatic-Module-Name: es.cragenomica.espiga.ui
+Bundle-ActivationPolicy: lazy

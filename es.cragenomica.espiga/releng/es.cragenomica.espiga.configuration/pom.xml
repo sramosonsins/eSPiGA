@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>es.cragenomica.espiga</groupId>
+	<artifactId>es.cragenomica.espiga.configuration</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<properties>
+		<tycho.version>2.3.0</tycho.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<!-- 2020-09 latest update that support 1.8 Java -->
+		<eclipse-repo.url>http://download.eclipse.org/releases/2021-09</eclipse-repo.url>
+		<eclipse-nebula.url>https://download.eclipse.org/nebula/releases/latest/</eclipse-nebula.url>
+		
+		
+		<maven.build.timestamp.format>yyyyMMdd-HHmm</maven.build.timestamp.format>
+    	<buildTimestamp>${maven.build.timestamp}</buildTimestamp>
+    	<buildId>${buildTimestamp}</buildId>
+    	<releaseName>${unqualifiedVersion}</releaseName>
+		
+	</properties>
+ 
+<!-- repositories is used before the target, what it is included in the targer for eclipse is not complete
+and is missing org.eclipse.equinox.executable.feature.group
+ -->
+	<repositories>
+		<repository>
+			<id>eclipse-release</id>
+			<url>${eclipse-repo.url}</url>
+			<layout>p2</layout>
+
+		</repository>
+
+
+		<repository>
+			<id>eclipse-nebula</id>
+			<url>${eclipse-nebula.url}</url>
+			<layout>p2</layout>
+		</repository>
+<!--
+		<repository>
+			<id>local-commons</id>
+			<url>file:../../gydbpro_commons/com.biotechvana.modules.rcp/releng/com.biotechvana.modules.rcp.update/target/repository</url>
+			<layout>p2</layout>
+		</repository>
+
+-->
+
+	</repositories>
+
+	<build>
+		<plugins>
+
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jarsigner-plugin</artifactId>
+				<version>1.2</version>
+				<configuration>
+					<keystore>../../../../gydbpro_commons/keys/gproKey.store</keystore>
+					<storepass>gpro_key</storepass>
+					<alias>gpro</alias>
+					<keypass>gpro_key</keypass>
+				</configuration>
+				<executions>
+					<execution>
+						<id>sign</id>
+						<goals>
+							<goal>sign</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>2.6</version>
+				<executions>
+					<execution>
+						<id>process-about.mappings</id>
+						<phase>prepare-package</phase>
+						<configuration>
+							<outputDirectory>${project.build.directory}</outputDirectory>
+							<overwrite>true</overwrite>
+							<resources>
+								<resource>
+									<directory>${basedir}</directory>
+									<includes>
+										<include>about.mappings</include>
+									</includes>
+									<filtering>true</filtering>
+								</resource>
+							</resources>
+						</configuration>
+						<goals>
+							<goal>copy-resources</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
+
+
+
+
+
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-maven-plugin</artifactId>
+				<version>${tycho.version}</version>
+				<extensions>true</extensions>
+			</plugin>
+			<!--Enable the replacement of the SNAPSHOT version in the final product 
+				configuration -->
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-packaging-plugin</artifactId>
+				<version>${tycho.version}</version>
+
+				<configuration>
+					<additionalFileSets>
+						<fileSet>
+							<directory>${project.build.directory}</directory>
+							<includes>
+								<include>about.mappings</include>
+							</includes>
+						</fileSet>
+					</additionalFileSets>
+				</configuration>
+
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<id>package-feature</id>
+						<configuration>
+							<finalName>${project.artifactId}_${unqualifiedVersion}.${buildQualifier}</finalName>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>target-platform-configuration</artifactId>
+				<version>${tycho.version}</version>
+				<configuration>
+					<target>
+						<artifact>
+							<groupId>es.cragenomica.espiga</groupId>
+							<artifactId>es.cragenomica.espiga.target</artifactId>
+							<version>1.0.0-SNAPSHOT</version>
+						</artifact>
+					</target> 
+					<environments>
+						<!-- <environment> -->
+						<!-- <os>linux</os> -->
+						<!-- <ws>gtk</ws> -->
+						<!-- <arch>x86</arch> -->
+						<!-- </environment> -->
+						<environment>
+							<os>linux</os>
+							<ws>gtk</ws>
+							<arch>x86_64</arch>
+						</environment>
+						<!-- <environment> -->
+						<!-- <os>win32</os> -->
+						<!-- <ws>win32</ws> -->
+						<!-- <arch>x86</arch> -->
+						<!-- </environment> -->
+						<environment>
+							<os>win32</os>
+							<ws>win32</ws>
+							<arch>x86_64</arch>
+						</environment>
+						<environment>
+							<os>macosx</os>
+							<ws>cocoa</ws>
+							<arch>x86_64</arch>
+						</environment>
+					</environments>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

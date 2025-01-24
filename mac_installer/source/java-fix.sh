@@ -1,0 +1,1 @@
+echo "__PRODUCT__ __VERSION__"

@@ -1,0 +1,19 @@
+<project>
+ <modelVersion>4.0.0</modelVersion>
+ <groupId>es.cragenomica.espiga</groupId>
+ <artifactId>es.cragenomica.espiga.root</artifactId>
+ <packaging>pom</packaging>
+ <parent>
+   <groupId>es.cragenomica.espiga</groupId>
+   <artifactId>es.cragenomica.espiga.configuration</artifactId>
+   <version>1.0.0-SNAPSHOT</version>
+  <relativePath>./releng/es.cragenomica.espiga.configuration</relativePath>
+ </parent>
+
+ <modules>
+  <module>bundles</module>
+  <module>releng</module>
+  <module>features</module> 
+ </modules>
+<version>1.1.0-SNAPSHOT</version>
+</project>

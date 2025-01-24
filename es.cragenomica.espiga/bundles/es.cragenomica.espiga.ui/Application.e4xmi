@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="ASCII"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_n5S98FDaEeu5go6Ig0-HRg" elementId="es.cragenomica.espiga.ui.application">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_L-BnEGf4Ee6jxMmO3BKYZQ" elementId="es.cragenomica.espiga.ui.main.window" label="%appName" iconURI="platform:/plugin/es.cragenomica.espiga.ui/icons/SPiGA_icon_64x64.png">
+    <children xsi:type="advanced:PerspectiveStack" xmi:id="_3oNSkGf5Ee6jxMmO3BKYZQ" elementId="es.cragenomica.espiga.ui.perspectivestack" selectedElement="_3oNSkWf5Ee6jxMmO3BKYZQ">
+      <children xsi:type="advanced:Perspective" xmi:id="_3oNSkWf5Ee6jxMmO3BKYZQ" elementId="es.cragenomica.espiga.perspective.default" label="Default">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_3oNSkmf5Ee6jxMmO3BKYZQ" elementId="es.cragenomica.espiga.part.l0" horizontal="true">
+          <children xsi:type="basic:PartStack" xmi:id="_3oNSlWf5Ee6jxMmO3BKYZQ" elementId="com.biotechvana.ui.part.l1.right" containerData="30"/>
+          <children xsi:type="basic:PartSashContainer" xmi:id="_3oNSmWf5Ee6jxMmO3BKYZQ" elementId="es.cragenomica.espiga.ui.part.l0.right" containerData="70">
+            <children xsi:type="basic:PartStack" xmi:id="_3oNSmmf5Ee6jxMmO3BKYZQ" elementId="es.cragenomica.espiga.ui.part.l2.top">
+              <tags>editorsArea</tags>
+              <children xsi:type="basic:Part" xmi:id="_GjUkAGgbEe6jxMmO3BKYZQ" elementId="es.cragenomica.espiga.ui.part.tasksview" contributionURI="bundleclass://es.cragenomica.espiga.plugin/es.cragenomica.espiga.ui.views.TaskWorkspaceView" label="Tasks" iconURI="platform:/plugin/es.cragenomica.espiga.ui/icons/SPiGA_icon_32x32.png">
+                <toolbar xmi:id="_N3KlEGgbEe6jxMmO3BKYZQ" elementId="es.cragenomica.espiga.ui.toolbar.1">
+                  <children xsi:type="menu:DirectToolItem" xmi:id="__KkYUGgbEe6jxMmO3BKYZQ" elementId="es.cragenomica.espiga.ui.directtoolitem.run" label="Run" iconURI="platform:/plugin/com.biotechvana.commons/icons/run_exc.png" contributionURI="bundleclass://es.cragenomica.espiga.plugin/es.cragenomica.espiga.ui.handler.RunTaskWorkflowJobViewer"/>
+                  <children xsi:type="menu:DirectToolItem" xmi:id="_Yw2msHF3Ee6MPI6ppG9G-w" elementId="es.cragenomica.espiga.ui.directtoolitem.togglehelp" accessibilityPhrase="Toggle Help" label="Toggle Help" iconURI="platform:/plugin/com.biotechvana.commons/icons/help-icon-16.png" tooltip="Show/Hide Task Help" contributionURI="bundleclass://es.cragenomica.espiga.plugin/es.cragenomica.espiga.ui.handler.ToggleHelpWorkflowJobViewer"/>
+                  <children xsi:type="menu:DirectToolItem" xmi:id="_FRsuoGgcEe6jxMmO3BKYZQ" elementId="es.cragenomica.espiga.ui.directtoolitem.reset" label="Reset Task" iconURI="platform:/plugin/com.biotechvana.commons/icons/removeall.png" contributionURI="bundleclass://es.cragenomica.espiga.plugin/es.cragenomica.espiga.ui.handler.ResetWorkflowJobViewer"/>
+                </toolbar>
+              </children>
+            </children>
+            <children xsi:type="basic:PartStack" xmi:id="_3oNSm2f5Ee6jxMmO3BKYZQ" elementId="es.cragenomica.espiga.ui.part.l2.bottom" toBeRendered="false">
+              <tags>viewersArea</tags>
+            </children>
+          </children>
+        </children>
+      </children>
+      <children xsi:type="advanced:Perspective" xmi:id="_3oNSnGf5Ee6jxMmO3BKYZQ" elementId="com.biotechvana.ui.basics.perspective.ftptransfer" label="File Transfer">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_MqcgkHJeEe6rW_Kdfx3A_w" elementId="es.cragenomica.espiga.ui.partsashcontainer.0">
+          <children xsi:type="basic:PartSashContainer" xmi:id="_NvZWcHJeEe6rW_Kdfx3A_w" elementId="es.cragenomica.espiga.ui.partsashcontainer.1" containerData="75" horizontal="true">
+            <children xsi:type="basic:PartStack" xmi:id="_tN3ysHJiEe6rW_Kdfx3A_w" elementId="com.biotechvana.ui.part.l1.left" containerData="50"/>
+            <children xsi:type="basic:PartStack" xmi:id="_sUQqIHJiEe6rW_Kdfx3A_w" elementId="es.cragenomica.espiga.ui.partstack.1" containerData="50">
+              <children xsi:type="basic:Part" xmi:id="_C_wckHJhEe6rW_Kdfx3A_w" elementId="com.biotechvana.ui.ftpexplorer.part.ftp2" containerData="" contributionURI="bundleclass://com.biotechvana.ui.ftpexplorer/com.biotechvana.ui.v2.ftpexplorer.FTPViewer" label="Remote File Browser" iconURI="platform:/plugin/com.biotechvana.commons/icons/ftp.png">
+                <toolbar xmi:id="_C_wckXJhEe6rW_Kdfx3A_w" elementId="com.biotechvana.ui.ftpexplorer.toolbar.0">
+                  <children xsi:type="menu:DirectToolItem" xmi:id="_C_wcknJhEe6rW_Kdfx3A_w" elementId="com.biotechvana.ui.ftpexplorer.directtoolitem.refresh" label="Refresh" iconURI="platform:/plugin/com.biotechvana.commons/icons/arrow_refresh.png" contributionURI="bundleclass://com.biotechvana.ui.ftpexplorer/com.biotechvana.ui.v2.ftpexplorer.actions.FtpRefreshAction"/>
+                </toolbar>
+              </children>
+            </children>
+          </children>
+          <children xsi:type="basic:PartStack" xmi:id="_VpJZkHJhEe6rW_Kdfx3A_w" elementId="es.cragenomica.espiga.ui.partstack.0" containerData="25">
+            <children xsi:type="basic:Part" xmi:id="_jOZuUHJhEe6rW_Kdfx3A_w" elementId="es.cragenomica.espiga.ui.part.0" contributionURI="bundleclass://com.biotechvana.ui.ftpqueue/com.biotechvana.ui.ftpqueue.FTPQueueViewer" iconURI="platform:/plugin/org.eclipse.e4.ui.progress/icons/full/progress/pview.png"/>
+          </children>
+        </children>
+      </children>
+    </children>
+    <mainMenu xmi:id="_Uo5FcGf4Ee6jxMmO3BKYZQ" elementId="es.cragenomica.espiga.ui.main.menu">
+      <children xsi:type="menu:Menu" xmi:id="_JtoS8GgSEe6jxMmO3BKYZQ" elementId="eSPiGA.protocols" label="eSPiGA Protocols">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_HAjzQGgTEe6jxMmO3BKYZQ" elementId="es.cragenomica.espiga.ui.handledmenuitem.item" visible="false" label="Pipeline Mode" iconURI="platform:/plugin/com.biotechvana.commons/icons/workflow_16.png" command="_Hy-SMGgUEe6jxMmO3BKYZQ"/>
+        <children xsi:type="menu:MenuSeparator" xmi:id="_uA0l8GgXEe6jxMmO3BKYZQ" elementId="es.cragenomica.espiga.ui.menuseparator.0" visible="false"/>
+        <children xsi:type="menu:DynamicMenuContribution" xmi:id="_4G-WkGgXEe6jxMmO3BKYZQ" elementId="es.cragenomica.espiga.ui.dynamicmenucontribution.1" label="eSPiGA Tasks" contributionURI="bundleclass://es.cragenomica.espiga.plugin/es.cragenomica.espiga.ui.handler.eSPiGATasksMenu"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_56zAAHJcEe6rW_Kdfx3A_w" elementId="es.cragenomica.espiga.ui.menu.views" label="Views">
+        <children xsi:type="menu:DirectMenuItem" xmi:id="_DEPaUHJpEe6rW_Kdfx3A_w" elementId="es.cragenomica.espiga.ui.directmenuitem.taskstracking" label="Tasks Tracking" mnemonics="" contributionURI="bundleclass://es.cragenomica.espiga.plugin/es.cragenomica.espiga.ui.handler.ShowTrackingView"/>
+        <children xsi:type="menu:MenuSeparator" xmi:id="_xLpBEHJoEe6rW_Kdfx3A_w" elementId="es.cragenomica.espiga.ui.menuseparator.2"/>
+        <children xsi:type="menu:DirectMenuItem" xmi:id="_2iqwIHJoEe6rW_Kdfx3A_w" elementId="es.cragenomica.espiga.ui.directmenuitem.prespectives" label="- Prespectives -" enabled="false"/>
+        <children xsi:type="menu:DirectMenuItem" xmi:id="_JZVKkHJdEe6rW_Kdfx3A_w" elementId="es.cragenomica.espiga.ui.directmenuitem.espigaworkspace" label="eSPiGa Workspace" contributionURI="bundleclass://es.cragenomica.espiga.plugin/es.cragenomica.espiga.ui.handler.WorkspacePersepective"/>
+        <children xsi:type="menu:DirectMenuItem" xmi:id="_Dvf0QHJdEe6rW_Kdfx3A_w" elementId="es.cragenomica.espiga.ui.directmenuitem.filetransfer" label="File Transfer" contributionURI="bundleclass://es.cragenomica.espiga.plugin/es.cragenomica.espiga.ui.handler.FileTransferPerspective"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_IsrCcHJpEe6rW_Kdfx3A_w" elementId="es.cragenomica.espiga.ui.menu.settings" label="Settings">
+        <children xsi:type="menu:DirectMenuItem" xmi:id="_J8S3QHJpEe6rW_Kdfx3A_w" elementId="es.cragenomica.espiga.ui.directmenuitem.connectionssettings" label="Connections Settings" iconURI="platform:/plugin/com.biotechvana.commons/icons/view_menu.png" tooltip="eSPiGa Server Connection Settings" mnemonics="" contributionURI="bundleclass://es.cragenomica.espiga.ui/es.cragenomica.espiga.ui.handler.ShowServerSettingsDialog"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_Mqm8EGf_Ee6jxMmO3BKYZQ" elementId="help" label="&amp;Help">
+        <children xsi:type="menu:DirectMenuItem" xmi:id="_Mqm8FGf_Ee6jxMmO3BKYZQ" elementId="about" label="About" contributionURI="bundleclass://com.biotechvana.ui.rcp.commons/com.biotechvana.ui.rcp.commons.AboutHandler"/>
+      </children>
+    </mainMenu>
+    <trimBars xmi:id="_txBAcGf4Ee6jxMmO3BKYZQ" elementId="es.cragenomica.espiga.ui.main.statusbar" side="Bottom">
+      <children xsi:type="menu:ToolControl" xmi:id="_0Pb1YGf4Ee6jxMmO3BKYZQ" elementId="es.cragenomica.espiga.ui.toolcontrol.0" contributionURI="bundleclass://com.biotechvana.ui.rcp.commons/com.biotechvana.ui.rcp.status.StatusLineRegion"/>
+      <children xsi:type="menu:ToolBar" xmi:id="_0t89YGf4Ee6jxMmO3BKYZQ" elementId="es.cragenomica.espiga.ui.toolbar.0">
+        <children xsi:type="menu:ToolControl" xmi:id="_vE_UUGf5Ee6jxMmO3BKYZQ" elementId="es.cragenomica.espiga.ui.toolcontrol.1" contributionURI="bundleclass://org.eclipse.e4.ui.progress/org.eclipse.e4.ui.progress.internal.ProgressRegion"/>
+      </children>
+    </trimBars>
+  </children>
+  <handlers xmi:id="_yhmw4GgUEe6jxMmO3BKYZQ" elementId="es.cragenomica.espiga.ui.handler.0" contributionURI="bundleclass://es.cragenomica.espiga.plugin/es.cragenomica.espiga.ui.handler.ShowWorkflowJobHandlers" command="_zM3TYGgfEe6jxMmO3BKYZQ"/>
+  <rootContext xmi:id="_u8FEMFDaEeu5go6Ig0-HRg" elementId="org.eclipse.ui.contexts.dialogAndWindow" name="In Dialog and Windows">
+    <children xmi:id="_0AsNkFDaEeu5go6Ig0-HRg" elementId="org.eclipse.ui.contexts.window" name="In Windows"/>
+    <children xmi:id="_1ytk0FDaEeu5go6Ig0-HRg" elementId="org.eclipse.ui.contexts.dialog" name="In Dialogs"/>
+  </rootContext>
+  <descriptors xmi:id="_LBmnkHJrEe6rW_Kdfx3A_w" elementId="es.cragenomica.espiga.ui.SubmissionHistoryView" label="Tracking View" iconURI="platform:/plugin/com.biotechvana.commons/icons/log-icon-16.png" category="editorsArea" closeable="true" contributionURI="bundleclass://com.biotechvana.workflow.ui/com.biotechvana.workflow.ui.internal.SubmissionHistoryView">
+    <toolbar xmi:id="_LBmnkXJrEe6rW_Kdfx3A_w" elementId="com.biotechvana.workflow.ui.toolbar.1">
+      <children xsi:type="menu:DirectToolItem" xmi:id="_LBmnknJrEe6rW_Kdfx3A_w" elementId="com.biotechvana.workflow.ui.submissionhistoryview.refresh" label="Refresh" iconURI="platform:/plugin/com.biotechvana.commons/icons/arrow_refresh.png" contributionURI="bundleclass://com.biotechvana.workflow.ui/com.biotechvana.workflow.ui.handlers.RefreshSubmissionHistoryViewHandler"/>
+    </toolbar>
+  </descriptors>
+  <toolBarContributions xmi:id="_uZi0QHJlEe6rW_Kdfx3A_w" elementId="es.cragenomica.espiga.ui.toolbarcontribution.0" parentId="com.biotechvana.ui.filebrowser.toolbar.1">
+    <children xsi:type="menu:DirectToolItem" xmi:id="_12xa0HJlEe6rW_Kdfx3A_w" elementId="es.cragenomica.espiga.ui.directtoolitem.test" label="test" iconURI="platform:/plugin/com.biotechvana.commons/icons/process.png" contributionURI="bundleclass://com.biotechvana.ui.fileexplorer/com.biotechvana.fileExplorer.handler.ConfigFileBrowserHandler"/>
+  </toolBarContributions>
+  <commands xmi:id="_Hy-SMGgUEe6jxMmO3BKYZQ" elementId="es.cragenomica.espiga.ui.command.AllPipelinesView" commandName="Show Workflows"/>
+  <commands xmi:id="_zM3TYGgfEe6jxMmO3BKYZQ" elementId="es.cragenomica.espiga.ui.command.showTask" commandName="Show Workflow Task">
+    <parameters xmi:id="_33mkMGgfEe6jxMmO3BKYZQ" elementId="es.cragenomica.espiga.ui.command.showtask.taskname" name="Task ID" optional="false"/>
+  </commands>
+  <addons xmi:id="_n5S98VDaEeu5go6Ig0-HRg" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
+  <addons xmi:id="_n5S98lDaEeu5go6Ig0-HRg" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
+  <addons xmi:id="_n5S981DaEeu5go6Ig0-HRg" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
+  <addons xmi:id="_n5S99FDaEeu5go6Ig0-HRg" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
+  <addons xmi:id="_n5S99VDaEeu5go6Ig0-HRg" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
+  <addons xmi:id="_n5S99lDaEeu5go6Ig0-HRg" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
+  <addons xmi:id="_n5S991DaEeu5go6Ig0-HRg" elementId="org.eclipse.e4.ui.workbench.handler.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
+  <addons xmi:id="_8mvnIGgPEe6jxMmO3BKYZQ" elementId="es.cragenomica.espiga.ui.addon.0" contributionURI="bundleclass://es.cragenomica.espiga.ui/es.cragenomica.espiga.ui.UIAddOn"/>
+  <addons xmi:id="_toNawHJhEe6rW_Kdfx3A_w" elementId="org.eclipse.e4.demo.contacts.jobs.addon.progressmanager" contributionURI="bundleclass://org.eclipse.e4.ui.progress/org.eclipse.e4.ui.progress.ProgressViewAddon"/>
+</application:Application>

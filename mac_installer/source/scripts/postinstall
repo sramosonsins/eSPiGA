@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "Post installation process finished"
+
+

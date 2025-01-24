@@ -1,0 +1,19 @@
+#!/bin/sh
+
+title='Java 17 is Required'
+java_installed=$(ls /Library/Java/JavaVirtualMachines/ | grep "jdk-17" | sort | sed -n '1p' )
+echo "Running post $java_installed" > /tmp/my_postinstall2.log
+[ -z $java_installed ] && (
+    ## java is not installed 
+    osascript -e 'display dialog "Can not find Java 17, Do you want to install it?" with title "Java 17 is Required"' && (
+    installer -pkg JDK17.0.10.pkg -target /
+    ) || (
+        osascript -e 'display dialog  "Setup failed" buttons {"OK"}  with title "Error" with  icon stop'
+        exit 1
+    )
+) || (
+    echo "All goods"
+)
+# echo "Running post" > /tmp/my_postinstall.log
+
+exit 0 # all good
