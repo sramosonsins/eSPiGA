@@ -1,0 +1,11 @@
+<pkg-info format-version="2" identifier="es.cragenomica.__PRODUCT__.pkg" version="__VERSION__" install-location="/" auth="root">
+  <payload installKBytes="__INSTALL_KB_SIZE__" numberOfFiles="__NUM_FILES__"/>
+  <scripts>
+    <postinstall file="./postinstall"/>
+    <preinstall file="./preinstall"/>
+
+  </scripts>
+<bundle-version>
+    <bundle id="es.cragenomica.__PRODUCT__" CFBundleIdentifier="es.cragenomica.__PRODUCT__" path="./Applications/__PRODUCT__.app" CFBundleVersion="__VERSION__"/>
+</bundle-version>
+</pkg-info>

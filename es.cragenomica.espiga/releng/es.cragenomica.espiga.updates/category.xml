@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/es.cragenomica.espiga.feature_1.1.0.qualifier.jar" id="es.cragenomica.espiga.feature" version="1.1.0.qualifier">
+      <category name="espiga"/>
+   </feature>
+   <category-def name="espiga" label="eSPiGA">
+      <description>
+         eSPiGA updates
+      </description>
+   </category-def>
+</site>

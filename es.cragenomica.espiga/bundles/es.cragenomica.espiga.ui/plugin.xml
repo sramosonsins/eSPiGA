@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="org.eclipse.e4.ui.workbench.swt.E4Application"
+            name="eSPiGA">
+             <property
+               name="appName"
+               value="eSPiGA">
+         </property>
+         <property
+               name="lifeCycleURI"
+               value="bundleclass://es.cragenomica.espiga.ui/es.cragenomica.espiga.ui.E4LifeCycle">
+         </property>
+         <property
+               name="windowImages"
+               value="icons/SPiGA_icon_16x16.png,icons/SPiGA_icon_32x32.png,icons/SPiGA_icon_48x48.png,icons/SPiGA_icon_64x64.png,icons/SPiGA_icon_128x128.png,icons/SPiGA_icon_256x256.png">
+         </property>
+         <property
+               name="aboutText"
+               value="%productBlurb">
+         </property>
+         <property
+               name="aboutImage"
+               value="icons/SPiGA_icon_128x128.png">
+         </property>
+      </product>
+   </extension>
+   <extension
+         id="com.biotechvana.ui.espiga.fragment"
+         point="org.eclipse.e4.workbench.model">
+      <fragment
+            apply="always"
+            uri="fragment.e4xmi">
+      </fragment>
+   </extension>
+
+</plugin>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:basic_1="http://www.eclipse.org/ui/2010/UIModel/application/descriptor/basic" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_JD1hMB9MEeurOaSBEnbo_A">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_V-Xj8CPsEeu_3sbjwCe8VQ" featurename="addons" parentElementId="xpath:/">
+    <elements xsi:type="application:Addon" xmi:id="_XfQu8CPsEeu_3sbjwCe8VQ" elementId="com.biotechvana.ui.ftpexplorer.addon.0" contributionURI="bundleclass://com.biotechvana.ui.ftpexplorer/com.biotechvana.ui.ftpexplorer.commonsAddon"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_ghLugCQEEeu_3sbjwCe8VQ" featurename="children" parentElementId="preferences"/>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_o_zrMCQFEeu_3sbjwCe8VQ" featurename="children" parentElementId="com.biotechvana.ui.part.l1.right">
+    <elements xsi:type="basic:Part" xmi:id="_s8BpICQFEeu_3sbjwCe8VQ" elementId="com.biotechvana.ui.ftpexplorer.part.ftp" contributionURI="bundleclass://com.biotechvana.ui.ftpexplorer/com.biotechvana.ui.v2.ftpexplorer.FTPViewer" label="Remote File Browser" iconURI="platform:/plugin/com.biotechvana.commons/icons/ftp.png" tooltip="Remote File Browser">
+      <toolbar xmi:id="_vpcRoCQFEeu_3sbjwCe8VQ" elementId="com.biotechvana.ui.ftpexplorer.toolbar.0">
+        <children xsi:type="menu:DirectToolItem" xmi:id="_8QkKMCQFEeu_3sbjwCe8VQ" elementId="com.biotechvana.ui.ftpexplorer.directtoolitem.refresh" label="Refresh" iconURI="platform:/plugin/com.biotechvana.commons/icons/arrow_refresh.png" contributionURI="bundleclass://com.biotechvana.ui.ftpexplorer/com.biotechvana.ui.v2.ftpexplorer.actions.FtpRefreshAction"/>
+      </toolbar>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_p3Q5UBkdEeutIfNs2L2Iiw" featurename="children" parentElementId="com.biotechvana.ui.part.l1.left">
+    <elements xsi:type="basic:Part" xmi:id="_C3VEgBkeEeutIfNs2L2Iiw" elementId="com.biotechvana.ui.fileexplorer" contributionURI="bundleclass://com.biotechvana.ui.fileexplorer/com.biotechvana.fileExplorerBasic.FileExplorerBasic" label="Local File Browser" iconURI="platform:/plugin/com.biotechvana.commons/icons/folder.png">
+      <toolbar xmi:id="_fEO_IBkeEeutIfNs2L2Iiw" elementId="com.biotechvana.ui.filebrowser.toolbar.1">
+        <children xsi:type="menu:DirectToolItem" xmi:id="_fyNfcBkeEeutIfNs2L2Iiw" elementId="com.biotechvana.ui.filebrowser.directtoolitem.refresh" label="Refresh" iconURI="platform:/plugin/com.biotechvana.commons/icons/arrow_refresh.png" contributionURI="bundleclass://com.biotechvana.ui.fileexplorer/com.biotechvana.fileExplorerBasic.actions.FileExplorerRefreshAction"/>
+      </toolbar>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_cQx6MCtgEeuP39kEh1ZiFw" featurename="descriptors" parentElementId="xpath:/">
+    <elements xsi:type="basic_1:PartDescriptor" xmi:id="_dgMToCtgEeuP39kEh1ZiFw" elementId="com.biotechvana.ui.ftpexplorer.FTPExplorer" label="Remote File Browser" iconURI="platform:/plugin/com.biotechvana.commons/icons/ftp.png" tooltip="Remote File Browser" category="FTPBrowser" contributionURI="">
+      <toolbar xmi:id="_klMAYCtgEeuP39kEh1ZiFw" elementId="com.biotechvana.ui.ftpexplorer.toolbar.1"/>
+    </elements>
+  </fragments>
+</fragment:ModelFragments>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/descriptor/basic" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmi:id="_dnMmkFDbEeu5go6Ig0-HRg">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_gmkpkF8EEeuWf7sO7RFNzw" featurename="commands" parentElementId="xpath:/">
+    <elements xsi:type="commands:Command" xmi:id="_iKprcF8EEeuWf7sO7RFNzw" elementId="es.cragenomica.espiga.command.show.ExperimentConfigurationView" commandName="Show Experiment Configuration View"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_mqIugF8EEeuWf7sO7RFNzw" featurename="handlers" parentElementId="xpath:/">
+    <elements xsi:type="commands:Handler" xmi:id="_upWAwF8EEeuWf7sO7RFNzw" elementId="es.cragenomica.espiga.plugin.handler.0" contributionURI="bundleclass://es.cragenomica.espiga.plugin/es.cragenomica.espiga.handlers.ShowExperimentConfigurationViewHandler" command="_iKprcF8EEeuWf7sO7RFNzw"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_4pAu4F8EEeuWf7sO7RFNzw" featurename="descriptors" parentElementId="xpath:/">
+    <elements xsi:type="basic:PartDescriptor" xmi:id="_6oYloF8EEeuWf7sO7RFNzw" elementId="es.cragenomica.espiga.views.ExperimentConfigurationView" label="eSPiGA Experiment Configuration" iconURI="platform:/plugin/es.cragenomica.espiga.plugin/icons/16x16.png" tooltip="eSPiGA Experiment Configuration" category="editorsArea" closeable="true" contributionURI="bundleclass://es.cragenomica.espiga.plugin.old/com.biotechvana.rnapipelines.ExperimentConfigurationView">   
+    <toolbar xmi:id="_D-Qv4F8FEeuWf7sO7RFNzw" elementId="es.cragenomica.espiga.plugin.toolbar.0"/>
+    </elements>
+  </fragments>
+</fragment:ModelFragments>

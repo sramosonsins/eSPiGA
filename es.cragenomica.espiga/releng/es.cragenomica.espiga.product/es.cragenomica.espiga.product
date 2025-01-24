@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pde version="3.5"?>
+
+<product name="eSPiGA" uid="es.cragenomica.espiga" id="es.cragenomica.espiga.ui.product" application="org.eclipse.e4.ui.workbench.swt.E4Application" version="1.1.0.qualifier" type="features" includeLaunchers="true" autoIncludeRequirements="true">
+
+   <aboutInfo>
+      <image path="icons/SPiGA_icon_128x128.png"/>
+      <text>
+         %productBlurb
+      </text>
+   </aboutInfo>
+
+   <configIni use="default">
+   </configIni>
+
+   <launcherArgs>
+      <programArgs>-clearPersistedState
+      </programArgs>
+      <vmArgs>-Dosgi.requiredJavaVersion=11  -Xms400m -Xmx1024m
+      </vmArgs>
+      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts
+      </vmArgsMac>
+   </launcherArgs>
+
+   <windowImages i16="icons/SPiGA_icon_16x16.png" i32="icons/SPiGA_icon_32x32.png" i48="icons/SPiGA_icon_48x48.png" i64="icons/SPiGA_icon_64x64.png" i128="icons/SPiGA_icon_128x128.png" i256="icons/SPiGA_icon_256x256.png"/>
+
+   <splash
+      location="es.cragenomica.espiga.ui" />
+   <launcher name="eSPiGA">
+      <linux icon="icons/SPiGA_icon.xpm"/>
+      <macosx icon="icons/SPiGA_icon.icns"/>
+      <win useIco="true">
+         <ico path="icons/SPiGA_icon.ico"/>
+         <bmp
+            winSmallHigh="icons/SPiGA_icon_16x16.bmp"
+            winMediumHigh="icons/SPiGA_icon_32x32.bmp"
+            winLargeHigh="icons/SPiGA_icon_48x48.bmp"
+            winExtraLargeHigh="icons/SPiGA_icon_256x256.bmp"/>
+      </win>
+   </launcher>
+
+   <vm>
+   </vm>
+
+   <license>
+        <url>http://biotechvana.uv.es/bioinformatics/main.php?document=terms_pcl</url>
+        <text>
+   END-USER LICENSE AGREEMENT FOR BIOTECH VANA S.L. SOFTWARE PRODUCTS SUPPLIED IN PRIVATE SOURCE
+
+Please read the terms of use of this kind of product carefully before using it. If you do not agree to all of the terms of use contained in this document, please do not install the software.
+OVERALL TERMS:
+
+This End-User License Agreement (EULA) is a legal agreement between you (&quot;User&quot;) and Biotech Vana S.L (&quot;Biotechvana&quot;), the licensor of Subscription software (&quot;Software&quot;). An amendment or addendum to this EULA may accompany these Software Products. The Software Products are for use on a computer system that strictly complies with specifications set forth in the Documentation. BY ACCEPTING THIS CONDICTIONS DURING THE INSTALLATION PROCESS, OPENING THE PACKAGE CONTAINING THE SOFTWARE PRODUCTS, OR OTHERWISE USING THE SOFTWARE PRODUCTS, YOU AGREE TO BE BOUND BY THE TERMS OF THIS AGREEMENT. IF YOU DO NOT AGREE TO THE TERMS OF THIS AGREEMENT, BIOTECHVANA IS UNWILLING TO LICENSE THE SOFTWARE PRODUCTS TO YOU. IN SUCH EVENT, (A) YOU SHALL NOT USE, READ OR ACCESS IN ANY MANNER THE SOFTWARE PRODUCTS, AND YOU SHOULD CONTACT BIOTECHVANA OR THE DISTRIBUTOR WHO PROVIDED THE SOFTWARE PRODUCTS TO YOU OR (B) CLICK THE &quot;CANCEL&quot; BUTTON AND THE INSTALLATION PROCESS WILL NOT CONTINUE. WRITTEN APPROVAL IS NOT A PREREQUISITE TO THE VALIDITY OR ENFORCEABILITY OF THIS AGREEMENT AND NO SOLICITATION OF ANY SUCH WRITTEN APPROVAL BY OR ON BEHALF OF BIOTECHVANA SHALL BE CONSTRUED AS AN INFERENCE TO THE CONTRARY. IF YOU HAVE ORDERED THE SOFTWARE PRODUCTS, BIOTECHVANA´S ACCEPTANCE IS EXPRESSLY CONDITIONAL ON YOUR AGREEMENT TO THESE TERMS TO THE EXCLUSION OF ALL OTHER TERMS; IF THESE TERMS ARE CONSIDERED AN OFFER BY BIOTECHVANA, ACCEPTANCE IS EXPRESSLY LIMITED TO THESE TERMS.
+OWNERSHIP AND ACCESIBILITY:
+
+Biotechvana Bioinformatics software provided in private source is property of Biotechvana. Licensee of software is quoted by payment of an annual subscription. Without limitation of any other provisions, Biotechvana and subscribers agree: For individual researchers and departments, subscription comprises full access to all computational resources available at Biotechvana bioinformatics, as well as permission for downloading and using an unlimited number of licenses per subscriber of all software available in current and all former versions of the Biotechvana Bioinformatics. For institutions and companies including more than one department, it is possible to agree to a collective low-priced subscription covering all departments. Each subscription comprises a number of users whose IP must be identified when registering. Individual subscribers can install this software only in one single computer for personal use. Institutional subscription includes the installation of this software on the computers belonging to the department which purchased the subscription. The subscription is annual. During this time users can use the Biotechvana Bioinformatics resources and download the software as many times as they consider necessary. Once this period has elapsed, the subscription must be renewed to access Biotechvana Bioinformatics again.
+GRANT OF LICENSE:
+
+Subject to the terms and conditions of the Biotechvana Bioinformatics Agreement, Biotechvana grants to you, and you accept a non-exclusive, non-transferable and non sub-licensable license to use the Software Products on the following terms, provided that you comply with all terms and conditions of this EULA. You may (a) Use the Software on a licensed computer; (b) Make a single copy of the Software for personal backup use only; (c) Publish texts that include or comment results obtained with the Software, but only if these results or comments are accompanied by a reference to the Software.
+RESTRICTIONS ON USE:
+
+(a) You will not modify, incorporate into or with other software, or create derivative works of the Software Products; (b) You may not use the Software products, except as set forth in Section 1. Any copies that you are permitted to make pursuant to this Agreement must contain the same copyright and other proprietary notices that appear on or in the Software products; (c) You will not reverse engineer, decompile, disassemble, or otherwise translate or analyze the Software, any source code, underlying ideas, algorithms or programming by any means whatsoever; (d) You agree not to remove any product identification, copyright or other notices on the Software products; (e) You agree not to rent or lease the Software products without prior permission of Biotechvana.
+INTELLECTUAL PROPERTY:
+
+(a) The Software products and any copies that you are authorized by Biotechvana to make, are the intellectual property of and are owned by Biotechvana and protected under copyright and other intellectual property laws (including international copyright treaties, as well as other intellectual property treaties); (b) You acknowledge and agree that all right, title, and interest in and to the Software products, including associated intellectual property rights, are and shall remain with Biotechvana; (c) This Agreement does not convey to you an interest in or to the Software products, but only a limited right of use which is revocable in accordance with the terms of this Agreement; (d) The Software products are licensed, not sold, to you by Biotechvana for use only under the terms of this Agreement, and Biotechvana reserves any rights not expressly granted to you; (e) You shall affix, to each full or partial copy of Software products made by you, all copyright and proprietary information notices as appeared on or in the original; (f) No license, right, or interest in any Biotechvana trademark, trade name, service mark, or other designation is granted hereunder; (g) Nothing contained herein shall be construed as conferring by implication or otherwise any license or right under any patent, whether or not the exercise of any right herein granted necessarily employs an invention of any existing or later issued patent. Notwithstanding the above, Biotechvana agrees that you shall have the right to exercise all rights expressly granted to you pursuant to this Agreement; (h) You agree to keep confidential, not use (except as expressly provided herein) and not disclose any Software products or related technology, idea, algorithm or information, and to prevent and protect the Software products from unauthorized disclosure or use; (i) Except as expressly stated above, this Agreement does not grant you any intellectual property rights in the Software products; (j) You acknowledge and agree that any feedback, suggestions, comments, improvements, modifications and other information that you provide to Biotechvana relating to the Software products or their performance may be used, disclosed, disseminated and/or published by Biotechvana for any purpose, including incorporating such information in improvements to the Software, without obligation of any kind to you, and that you waive any rights whatsoever in or to such information.
+TECHNICAL TEXTS AND MANUALS:
+
+Information available in printed material and/or electronic documentation provided to you in connection with this Agreement escape to the terms summarized in this document and they are facilitated under the terms of the CREATIVE COMMONS ATTRIBUTION LICENSE. You are free to share, copy, distribute, adapt and transmit the texts and/or any algorithms provided in any printed material and/or electronic documentation available in Biotechvana Bioinformatics if this material is properly cited.
+TRANSFER AND OTHER USES:
+
+(a) You will not assign, sublicense, transfer, pledge, distribute, market, lease, loan or rent to any third party the Software products or their use in any service bureau, time sharing or rental arrangement, share your rights under this Agreement, engage in the service of operating the Software on behalf of third parties, or otherwise use or allow others to use Software products to or for the benefit of third parties or authorize all or any portion of the Software products to be copied onto another user´s computer except as may be expressly permitted herein.
+WARRANTY AND TECHNICAL SUPPORT:
+
+Biotechvana Bioinformatics guarantees and provides technical support for this software, free of charge, during the validity of your subscription period (one year). Warranty period is automatically extended each time the subscription is renewed. An on-line service for technical support is available at Biotechvana Bioinformatics to request us on technical advice.
+DISCLAIMER AND LIABILITY:
+
+SOFTWARE WARRANTY EXTENDS ONLY AS FOR THE NORMAL FUNCTION OF THE TOOL DURING THE PERIOD OF SUBSCRIPTION. SHOULD THE PROGRAM PROVE DEFECTIVE, WE PROVIDE YOU OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION. BIOTECHVANA DOES NOT GIVE HOWEVER ANY KIND OF WARRANTY NOR ASSUME ANY KIND OF LIABILITY OR RESPONSIBILITY, OF THE USE AND RESULTS OBTAINED USING THIS TOOL, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. IN NO EVENT SHALL BIOTECHVANA BE LIABLE FOR ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL, CONSEQUENTIAL, LOSS OF BUSINESS PROFITS INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED TO LOSS OF DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER PROGRAMS, EVEN IF BIOTECHVANA HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+TERMINATION:
+
+This software is not self-limited: If the subscription is not renewed, users can normally use all software downloaded during the duration of the subscription. You may however terminate this Agreement at any time by destroying all copies of the Software products and erasing all copies of the Software products. Biotechvana may also terminate this Agreement immediately upon breach by you of any term hereof. Upon termination, you shall immediately cease all use of the Software products and return or destroy all copies of the Software products and all portions thereof and so certify the same to Biotechvana. Termination is not an exclusive remedy and all other remedies will be available to Biotechvana whether or not the Agreement is terminated.
+SEVERABILITY:
+
+In event that any provision of this Agreement is held to be unenforceable or invalid under any applicable law or so held by a court of competent jurisdiction, such unenforceability or invalidity shall not render this Agreement unenforceable, or invalid as a whole, and in such event, any such provision shall be changed and interpreted so as to best accomplish the objectives of such unenforceable provision within the limits of applicable law or applicable court decisions.
+MISCELLANEOUS:
+
+YOU ACKNOWLEDGE AND AGREE THAT THE WARRANTY DISCLAIMERS AND LIABILITY AND REMEDY LIMITATIONS IN THIS AGREEMENT ARE AMONG THE MATERIAL BARGAINED FOR BASES OF THIS AGREEMENT AND THAT THEY HAVE BEEN TAKEN INTO ACCOUNT AND REFLECTED IN DETERMINING THE CONSIDERATION TO BE GIVEN BY YOU IN CONNECTION WITH THE SOFTWARE PRODUCTS AND IN YOUR DECISION TO ENTER INTO THIS AGREEMENT. This Agreement represents the entire agreement concerning the Software products available in private source between you and Biotechvana, and it supersedes any prior proposal, representation, or understanding between you and Biotechvana. Any waivers or amendments shall be effective only if made in writing, clearly understood by you and Biotechvana to be an amendment or waiver and signed by representatives authorized to bind you and Biotechvana respectively.
+         </text>
+   </license>
+
+   <plugins>
+   </plugins>
+
+   <features>
+      <feature id="es.cragenomica.espiga.feature" installMode="root"/>
+      <feature id="org.eclipse.e4.rcp" installMode="root"/>
+      <feature id="org.eclipse.emf.ecore" installMode="root"/>
+      <feature id="org.eclipse.emf.common" installMode="root"/>
+      <feature id="org.eclipse.equinox.p2.core.feature"/>
+      <feature id="org.eclipse.ecf.core.feature"/>
+      <feature id="org.eclipse.ecf.filetransfer.feature"/>
+      <feature id="org.eclipse.ecf.core.ssl.feature"/>
+      <feature id="org.eclipse.ecf.filetransfer.ssl.feature"/>
+      <feature id="org.eclipse.ecf.filetransfer.httpclient5.feature"/>
+   </features>
+
+   <configurations>
+      <plugin id="org.apache.felix.scr" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.core.runtime" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.equinox.common" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.event" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.simpleconfigurator" autoStart="true" startLevel="1" />
+      <property name="osgi.instance.area.default" value="@user.home/GPRO/eSPiGA" />
+   </configurations>
+
+   <preferencesInfo>
+      <targetfile overwrite="false"/>
+   </preferencesInfo>
+
+   <cssInfo>
+   </cssInfo>
+
+</product>

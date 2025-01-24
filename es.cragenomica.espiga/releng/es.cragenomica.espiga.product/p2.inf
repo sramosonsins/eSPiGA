@@ -1,0 +1,3 @@
+instructions.configure=\
+  org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(type:0,location:https${#58}//gpro.biotechvana.com/updates/e4/eSPiGA/repository);\
+  org.eclipse.equinox.p2.touchpoint.eclipse.addRepository(type:1,location:https${#58}//gpro.biotechvana.com/updates/e4/eSPiGA/repository);
